@@ -1,8 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router'
 
 export default React.createClass({
   render() {
-    return <div>Dashboard</div>
+    return (
+      <div>
+        <h1>Dashboard</h1>
+        <h2>{this.props.params.userName}</h2>
+      </div>
+    )
   }
 })

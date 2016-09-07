@@ -25,22 +25,15 @@ var Heading = React.createClass({
 });
 
 var Login = React.createClass({
-  getInitialState: function() {
-    return {};
-  },
-  handleSubmit: function(e) {
-    e.preventDefault();
-    this.setState({});
-  },
   render: function() {
     return (
       <div id='splash'>
         <Heading />
         <div id="login">
-          <form className="loginForm" onSubmit={this.handleSubmit}>
+          <form className="loginForm">
             <input type='text' placeholder='User Name'/>
             <input type='text' placeholder='Password'/>
-            <Link to="/dashboard">Log In</Link>
+            <Link to="/1/dashboard">Log In</Link>
           </form>
         </div>
       </div>
