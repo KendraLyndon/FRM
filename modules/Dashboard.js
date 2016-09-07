@@ -24,6 +24,46 @@ var data = [
   },
   {
     id:3,
+    first_name:"bob",
+    last_name:"garofalo",
+    relation:"gramps",
+    user_id:1,
+    is_user:true,
+    connection_id:3,
+    city:"Glens Falls"
+  },
+  {
+    id:2,
+    first_name:"greg",
+    last_name:"garofalo",
+    relation:"dad",
+    user_id:1,
+    is_user:true,
+    connection_id:3,
+    city:"Glens Falls"
+  },
+  {
+    id:2,
+    first_name:"greg",
+    last_name:"garofalo",
+    relation:"dad",
+    user_id:1,
+    is_user:true,
+    connection_id:3,
+    city:"Glens Falls"
+  },
+  {
+    id:2,
+    first_name:"greg",
+    last_name:"garofalo",
+    relation:"dad",
+    user_id:1,
+    is_user:true,
+    connection_id:3,
+    city:"Glens Falls"
+  },
+  {
+    id:3,
     first_name:"Chelsea",
     last_name:"garofalo",
     relation:"sister",

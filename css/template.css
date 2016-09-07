@@ -4,13 +4,20 @@ header{
   background-color: grey;
 }
 
-.title, .nav, .navlinks {
+.title{
   display: inline-block;
 }
 
-aside{
+.nav{
+  display: inline-block;
+}
+
+.navlink {
+  display: inline-block;
+}
+
+aside {
   height: 86vh;
-  /*width: 400px;*/
   float: left;
   background-color: blue;
 }
@@ -27,4 +34,27 @@ footer{
   width: 100%;
   clear: both;
   background-color: green;
+}
+
+@media screen and (max-width:680px){
+  header {
+    height: 7vh;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: flex;
+  }
+  ul.topnav.responsive li a {
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+  }
 }
