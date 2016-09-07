@@ -1,0 +1,30 @@
+header{
+  height: 7vh;
+  width: 100%;
+  background-color: grey;
+}
+
+.title, .nav, .navlinks {
+  display: inline-block;
+}
+
+aside{
+  height: 86vh;
+  /*width: 400px;*/
+  float: left;
+  background-color: blue;
+}
+
+.dashboard {
+  float: right;
+  overflow-y: scroll;
+  height: 86vh;
+  background-color: purple;
+}
+
+footer{
+  height:7vh;
+  width: 100%;
+  clear: both;
+  background-color: green;
+}

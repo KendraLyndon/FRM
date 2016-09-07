@@ -34,11 +34,10 @@ var data = [
   }
 ]
 
-
 export default React.createClass({
   render() {
     return (
-      <div>
+      <div className="dashboard col-lg-10 col-md-10 col-xs-12">
         <h2>{this.props.params.userName}</h2>
         <Dashboard/>
       </div>
