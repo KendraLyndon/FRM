@@ -25,6 +25,9 @@ var Heading = React.createClass({
 });
 
 var Login = React.createClass({
+  logIn: function(){
+    console.log('hello');
+  },
   render: function() {
     return (
       <div id='splash'>
@@ -33,7 +36,9 @@ var Login = React.createClass({
           <form className="loginForm">
             <input type='text' placeholder='User Name'/>
             <input type='text' placeholder='Password'/>
-            <Link to="/1/dashboard">Log In</Link>
+            <button onClick={this.logIn}>
+              <Link to="/1/dashboard">Log In</Link>
+            </button>
           </form>
         </div>
       </div>
