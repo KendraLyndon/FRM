@@ -1,39 +1,30 @@
 header{
-  height: 7vh;
+  height: 9vh;
   width: 100%;
   background-color: grey;
 }
 
-.title{
-  display: inline-block;
-}
-
-.nav{
-  display: inline-block;
-}
-
-.navlink {
-  display: inline-block;
+.title, .nav, .navlink{
+  display: inline-block !important;
 }
 
 aside {
-  height: 86vh;
+  height: 87vh;
   float: left;
-  background-color: blue;
 }
 
 .dashboard {
   float: right;
   overflow-y: scroll;
-  height: 86vh;
+  height: 87vh;
   background-color: purple;
 }
 
 footer{
-  height:7vh;
+  height:6vh;
   width: 100%;
   clear: both;
-  background-color: green;
+  background-color: grey;
 }
 
 @media screen and (max-width:680px){
