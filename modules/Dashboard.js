@@ -78,7 +78,6 @@ export default React.createClass({
   render() {
     return (
       <div className="dashboard col-lg-10 col-md-10 col-xs-12">
-        <h2>{this.props.params.userName}</h2>
         <Dashboard/>
       </div>
     )
@@ -89,8 +88,6 @@ var Dashboard = React.createClass({
   render() {
     return (
       <div>
-        <h1>Dashboard</h1>
-
         <Connections data={data}/>
       </div>
     )
@@ -101,7 +98,7 @@ var Connections = React.createClass({
   render(){
     var arr = this.props.data.map(function(connection, i){
       return (
-        <div className="connection panel panel-default" key={i}>
+        <div className="connection panel panel-custom" key={i}>
           <div className="panel-heading">
             <h3 className="panel-title">{connection.first_name + " " +connection.last_name}</h3>
           </div>

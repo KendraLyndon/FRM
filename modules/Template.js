@@ -37,6 +37,7 @@ var Aside = React.createClass({
     return (
       <div className="aside">
         <aside className="col-lg-2 col-md-2 col-xs-12">
+          <img className="profilePic" src="../images/ryan.jpg"/>
           <p><Link to="/:userName/eventful">Find Events</Link></p>
         </aside>
       </div>
