@@ -1,0 +1,78 @@
+@font-face {
+ font-family:'quicksand';
+ src:  url('../fonts/quicksand/Quicksand-Regular.otf') format('truetype');
+}
+@font-face {
+ font-family:'CaviarDreams';
+ src:  url('../fonts/Caviar-Dreams/CaviarDreams.ttf') format('truetype');
+}
+h3.panel-title{
+  color: #FFFFE9 !important
+}
+.panel-title{
+  font-family:"quicksand";
+  font-size: 30px;
+
+
+}
+.panel-body{
+  font-family:"quicksand";
+  font-size: 15px;
+}
+header{
+  background-color: #003D6B;
+  text-align: center;
+  box-shadow: 4px 0px 15px 4px black;
+
+}
+.title{
+    font-family:"quicksand";
+    color: #BAD80A;
+    float:left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.dashboard{
+  background-color: #FFFFE9;
+}
+aside{
+  background-color:#003D6B;
+  border-top-style: inset;
+  border-right-style: inset;
+  border-bottom-style: inset;
+
+}
+footer{
+  background-color: #003D6B;
+  color:#BAD80A;
+  text-align: center;
+}
+.navlink{
+  color: #FFFFE9;
+  font-size: 15px;
+  font-family:"quicksand";
+}
+.nav{
+  margin-top: 10px;
+  float: right;
+}
+a{
+  color: #FFFFE9;
+}
+.panel{
+  margin-top: 20px;
+  box-shadow: 0 8px 6px -6px black;
+}
+.panel-heading{
+  background-color: #4F42C1;
+}
+.profilePic{
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: solid 1px #555;
+  background-color: #eed;
+}
