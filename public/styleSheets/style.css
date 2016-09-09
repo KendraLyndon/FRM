@@ -76,3 +76,61 @@ a{
   border: solid 1px #555;
   background-color: #eed;
 }
+.ryanSplashLogo{
+  font-size: 75px;
+  font-family: "quicksand";
+  color: #BAD80A;
+}
+.ryanSplashBody{
+  height: 100vh;
+  width:100vw;
+  background-color:#003D6B;
+}
+.ryanSlogan{
+  font-family: "quicksand";
+    color: #FFFFE9;
+}
+.ryanInput{
+  display:block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 25vw;
+  height: 30px;
+  font-family: "quicksand";
+}
+.ryanButton{
+  background: #4F42C1;
+  background-image: -webkit-linear-gradient(top, ##4F42C1, ##4F42C1);
+  background-image: -moz-linear-gradient(top, ##4F42C1, ##4F42C1);
+  background-image: -ms-linear-gradient(top, ##4F42C1, ##4F42C1);
+  background-image: -o-linear-gradient(top, ##4F42C1, ##4F42C1);
+  background-image: linear-gradient(to bottom, ##4F42C1, ##4F42C1);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 2px;
+  font-family: "quicksand";
+  color: #FFFFE9;
+  font-size: 15px;
+  padding: 5px 30px 5px 30px;
+  text-decoration: none;
+}
+.ryanLoginButton:hover {
+  background: #BAD80A;
+  background-image: -webkit-linear-gradient(top, ##BAD80A;, #3498db);
+  background-image: -moz-linear-gradient(top, ##BAD80A;, #3498db);
+  background-image: -ms-linear-gradient(top, ##BAD80A;, #3498db);
+  background-image: -o-linear-gradient(top, ##BAD80A;, #3498db);
+  background-image: linear-gradient(to bottom, ##BAD80A;, #3498db);
+  text-decoration: none;
+}
+.ryanCenter{
+  margin-left: 25vw;
+  align-content: center;
+}
+.ryanSignupButton{
+  margin-right: 20px;
+}
+.stickFam{
+  height: 200px;
+  width: 650px;
+}
