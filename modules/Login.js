@@ -15,10 +15,8 @@ var Heading = React.createClass({
   render: function() {
     return (
       <div className="heading">
-        <header>
-          <h1>FRM</h1>
-          <h2>Your personal Friends and Family Relationship Manager</h2>
-        </header>
+          <h1 className="ryanSplashLogo">FRM</h1>
+          <h2 className="ryanSlogan">Your Personal Family and Friends Relationship Manager</h2>
       </div>
     );
   }
@@ -31,15 +29,23 @@ var Login = React.createClass({
   render: function() {
     return (
       <div id='splash'>
-        <Heading />
-        <div id="login">
-          <form className="loginForm">
-            <input type='text' placeholder='User Name'/>
-            <input type='text' placeholder='Password'/>
-            <button onClick={this.logIn}>
-              <Link to="/1/dashboard">Log In</Link>
-            </button>
-          </form>
+        <div className="ryanSplashBody">
+          <div className="ryanCenter">
+            <Heading />
+              <div id="login">
+                <form className="loginForm">
+                  <input className="ryanInput" type='text' placeholder='User Name'/>
+                  <input  className="ryanInput" type='text' placeholder='Password'/>
+                  <button className="ryanButton ryanSignupButton" onClick={this.logIn}>
+                  <Link  to="/1/dashboard">Sign Up</Link>
+                  </button>
+                  <button className="ryanButton" onClick={this.logIn}>
+                    <Link  to="/1/dashboard">Log In</Link>
+                  </button>
+                </form>
+                <img className="stickFam" src="../images/stickFam.png"/>
+            </div>
+          </div>
         </div>
       </div>
     );
