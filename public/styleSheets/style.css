@@ -12,8 +12,6 @@ h3.panel-title{
 .panel-title{
   font-family:"quicksand";
   font-size: 30px;
-
-
 }
 .panel-body{
   font-family:"quicksand";
@@ -23,7 +21,6 @@ header{
   background-color: #003D6B;
   text-align: center;
   box-shadow: 4px 0px 15px 4px black;
-
 }
 .title{
     font-family:"quicksand";
@@ -77,11 +74,16 @@ a{
   background-color: #eed;
 }
 .ryanSplashLogo{
+  text-align: center;
   font-size: 75px;
   font-family: "quicksand";
   color: #BAD80A;
 }
 .ryanSplashBody{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width:100vw;
   background-color:#003D6B;
@@ -89,6 +91,11 @@ a{
 .ryanSlogan{
   font-family: "quicksand";
     color: #FFFFE9;
+}
+.kendraLogin{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 .ryanInput{
   display:block;
@@ -113,6 +120,7 @@ a{
   font-size: 15px;
   padding: 5px 30px 5px 30px;
   text-decoration: none;
+  border: none;
 }
 .ryanLoginButton:hover {
   background: #BAD80A;
@@ -124,13 +132,15 @@ a{
   text-decoration: none;
 }
 .ryanCenter{
-  margin-left: 25vw;
-  align-content: center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 .ryanSignupButton{
   margin-right: 20px;
 }
 .stickFam{
+  margin-top: 25px;
   height: 200px;
   width: 650px;
 }
