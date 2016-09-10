@@ -37,7 +37,7 @@ var Login = React.createClass({
                   <input className="ryanInput" type='text' placeholder='User Name'/>
                   <input  className="ryanInput" type='text' placeholder='Password'/>
                   <button className="ryanButton ryanSignupButton" onClick={this.logIn}>
-                    <Link  to="/signUp">Sign Up</Link>
+                    <Link  to="/signup">Sign Up</Link>
                   </button>
                   <button className="ryanButton" onClick={this.logIn}>
                     <Link  to="/1/dashboard">Log In</Link>

@@ -50,7 +50,7 @@ var Footer = React.createClass({
     return (
       <div className="footer">
         <footer>
-          <small>&copy 2016 GarofaloSandsLyndon corp</small>
+          <small dangerouslySetInnerHTML={{__html: '&copy SLG corp'}}></small>
         </footer>
       </div>
     )
