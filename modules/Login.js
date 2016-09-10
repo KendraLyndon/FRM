@@ -32,12 +32,12 @@ var Login = React.createClass({
         <div className="ryanSplashBody">
           <div className="ryanCenter">
             <Heading />
-              <div id="login">
+              <div className="kendraLogin" id="login">
                 <form className="loginForm">
                   <input className="ryanInput" type='text' placeholder='User Name'/>
                   <input  className="ryanInput" type='text' placeholder='Password'/>
                   <button className="ryanButton ryanSignupButton" onClick={this.logIn}>
-                  <Link  to="/1/dashboard">Sign Up</Link>
+                    <Link  to="/signUp">Sign Up</Link>
                   </button>
                   <button className="ryanButton" onClick={this.logIn}>
                     <Link  to="/1/dashboard">Log In</Link>
