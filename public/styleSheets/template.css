@@ -20,21 +20,44 @@ aside {
   background-color: purple;
 }
 
+.search-by-type{
+  margin-bottom:30px;
+  color: #FFFFE9;
+  margin-top: 15px;
+}
+
+
 .kendraSearchContainer{
   display:flex;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 .kendraSearch{
   border-radius: 2px;
   border: none;
+  width: 135px;
+  margin-bottom: 0;
+  font-family: 'quicksand';
+  font-weight: lighter;
+  text-align: center;
+  color: #333;
 }
 
 .kendraSearchButton{
   border-radius: 2px;
-  background-color: #4F42C1;
+  background-color: #BAD80A;
   border: none;
   color: #FFFFE9 !important;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+}
+
+.kendraSelect {
+  background-color: white;
+  color: #333;
+  font-weight: lighter;
+  font-family: 'quicksand';
 }
 
 footer{
