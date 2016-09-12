@@ -61,10 +61,15 @@ var SignInForm = React.createClass({
         <input
           className="kendraInput"
           type='text'
+          placeholder='City'
+        />
+        <input
+          className="kendraInput"
+          type='text'
           placeholder='Password'
         />
         <button className="ryanButton kendraButton">
-          <Link  to="/1/dashboard">Sign Up</Link>
+          <Link to="/100/dashboard">Sign Up</Link>
         </button>
       </form>
     )
