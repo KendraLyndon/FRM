@@ -6,13 +6,17 @@ var Testing = React.createClass({
   },
   componentDidMount: function() {
     var settings = {
-      url: "https://obscure-basin-16378.herokuapp.com/api/list/501",
+      url: "https://obscure-basin-16378.herokuapp.com/api/connections/1001",
       method: 'get',
       dataType: 'json',
       cache: false,
       success: function(data) {
         console.log(data);
-        this.setState({data: data.list.name});
+        this.setState({
+          data: data.connection.first_name,
+          lame: data.connection.last_name
+        });
+
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
@@ -25,6 +29,7 @@ var Testing = React.createClass({
       <div className="test">
         <h1>Testing</h1>
         <p>{this.state.data}</p>
+        <p>{this.state.lame}</p>
       </div>
     );
   }
