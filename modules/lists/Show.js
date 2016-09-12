@@ -1,5 +1,15 @@
 import React from 'react'
 
+export default React.createClass({
+  render() {
+    return (
+      <div className='list'>
+      <Testing />
+      </div>
+    )
+  }
+})
+
 var Testing = React.createClass({
   getInitialState: function() {
     return {data: []};
@@ -39,13 +49,3 @@ var Testing = React.createClass({
     );
   }
 });
-
-export default React.createClass({
-  render() {
-    return (
-      <div className='list'>
-      <Testing />
-      </div>
-    )
-  }
-})
