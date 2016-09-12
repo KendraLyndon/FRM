@@ -13,8 +13,11 @@ var Testing = React.createClass({
       success: function(data) {
         console.log(data);
         this.setState({
-          data: data.connection.first_name,
-          lame: data.connection.last_name
+          firstName: data.connection.first_name,
+          lastName: data.connection.last_name,
+          email:data.connection.email,
+          phone:data.connection.phone
+
         });
 
       }.bind(this),
@@ -28,8 +31,10 @@ var Testing = React.createClass({
     return (
       <div className="test">
         <h1>Testing</h1>
-        <p>{this.state.data}</p>
-        <p>{this.state.lame}</p>
+        <p>{this.state.firstName}</p>
+        <p>{this.state.lastName}</p>
+        <p>{this.state.email}</p>
+        <p>{this.state.phone}</p>
       </div>
     );
   }
