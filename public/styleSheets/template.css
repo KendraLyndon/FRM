@@ -20,6 +20,23 @@ aside {
   background-color: purple;
 }
 
+.kendraSearchContainer{
+  display:flex;
+  flex-direction:row;
+}
+
+.kendraSearch{
+  border-radius: 2px;
+  border: none;
+}
+
+.kendraSearchButton{
+  border-radius: 2px;
+  background-color: #4F42C1;
+  border: none;
+  color: #FFFFE9 !important;
+}
+
 footer{
   height:6vh;
   width: 100%;

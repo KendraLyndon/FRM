@@ -38,8 +38,38 @@ var Aside = React.createClass({
       <div className="aside">
         <aside className="col-lg-2 col-md-2 col-xs-12">
           <img className="profilePic" src="../images/ryan.jpg"/>
-          <p><Link to="/:userName/eventful">Find Events</Link></p>
+          <Search />
+          <ConnectionTypes />
+          <p><Link to="/100/eventful">Find Events</Link></p>
+          <p><Link to="/100/lists/new">Add a List</Link></p>
+          <p><Link to="/100/connection/new">Add a Connection</Link></p>
         </aside>
+      </div>
+    )
+  }
+})
+
+var Search = React.createClass({
+  render(){
+    return (
+      <div className="KendraSearchContainer">
+        <input className="kendraSearch" type="text" placeholder="find connection"/>
+        <button className="kendraSearchButton">Go</button>
+      </div>
+    )
+  }
+})
+
+var ConnectionTypes = React.createClass({
+  render(){
+    return (
+      <div className="search-by-type">
+        <p>Search by Relationship Type :</p>
+        <select>
+          <option>Friends</option>
+          <option>Family</option>
+          <option>Business</option>
+        </select>
       </div>
     )
   }
