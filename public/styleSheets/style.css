@@ -144,3 +144,59 @@ a{
   height: 200px;
   width: 650px;
 }
+.showPageImage{
+  height:20vh;
+  width:15vw;
+}
+.showConnection{
+  height: 85vh;
+  width:100%;
+  display: flex;
+}
+.showContainer{
+  display: inline-flex;
+  margin-top: 5vh;
+  float: right;
+  margin-left: auto;
+  position: relative;
+  width: 75vw;
+  margin-right: 5vw;
+  height: 70vh;
+  border: .75px solid black;
+  border-radius: 1%;
+}
+.showPageImage{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.ryansSmallLinks{
+  margin-left: 8%;
+}
+.ryansSmallLinks a{
+  color: black;
+}
+.connectionHistory{
+  display: inline-flex;
+  height: 60vh;
+  width: 40vw;
+  float: right;
+  overflow-y: scroll;
+  border: .5px solid grey;
+  display: inline-block;
+  margin-top: 2vh;
+  margin-left: 15vw;
+  background-color: #d3d3d3;
+
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+th{
+  width: 33%;
+  padding-left: 3%;
+  background-color: #4F42C1;
+}
+td{
+  padding-left: 3%;
+}
