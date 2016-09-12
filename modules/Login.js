@@ -16,48 +16,17 @@ var Heading = React.createClass({
   render: function() {
     return (
       <div className="heading">
-          <h1 className="ryanSplashLogo">FRM</h1>
-          <h2 className="ryanSlogan">Your Personal Family and Friends Relationship Manager</h2>
+        <h1 className="ryanSplashLogo">FRM</h1>
+        <h2 className="ryanSlogan">Your Personal Family and Friends Relationship Manager</h2>
       </div>
     );
   }
 });
 
 var UserForm = React.createClass({
-  getInitialState: function() {
-    return {
-      userName: '',
-      password: ''
-    }
-  },
-  handleChange: function(event) {
-    this.setState({value: event.target.value});
-  },
-  logIn: function(e) {
-    e.preventDefault();
-    var formData = {
-      userName: ReactDOM.findDOMNode(this.ref.userName).value,
-      password: ReactDOM.findDOMNode(this.ref.password).value
-    }
-    var settings = {
-      url: "https://obscure-basin-16378.herokuapp.com/auth/login",
-      method: 'post',
-      dataType: 'json',
-      data: formData,
-      cache: false,
-      success: function(data) {
-        console.log(data);
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.error(this.props.url, status, err.toString());
-      }.bind(this)
-    }
-    return $.ajax(settings);
-  },
   render: function(){
     return (
-      <form onSubmit={this.logIn}
-      className="loginForm">
+      <form className="loginForm">
         <input
           className="ryanInput"
           type='text'
@@ -71,10 +40,10 @@ var UserForm = React.createClass({
           placeholder='Password'
         />
         <button className="ryanButton ryanSignupButton">
-          <Link  to="/signup">Sign Up</Link>
+          <Link to="/signup">Sign Up</Link>
         </button>
         <button className="ryanButton">
-          <Link  to="/1/dashboard">Log In</Link>
+          <Link to="/1/dashboard">Log In</Link>
         </button>
       </form>
     )
