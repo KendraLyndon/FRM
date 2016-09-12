@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router';
 
 var data = [
   {
@@ -167,16 +168,18 @@ var Dashboard = React.createClass({
 var Connections = React.createClass({
   render(){
     var arr = this.props.data.map(function(connection, i){
+      var makeString = connection.id.toString();
       return (
         <div className="connection panel panel-custom" key={i}>
           <div className="panel-heading">
-            <h3 className="panel-title">{connection.first_name + " " +connection.last_name}</h3>
+            <h3 className="panel-title"><Link to='/100/connection/501'>{connection.first_name + " " +connection.last_name}</Link></h3>
           </div>
           <div className="panel-body">
             <p>Relation: {connection.relation}</p>
             <p>Contact Frequency: {connection.contactFrequency}</p>
             <p>Last Contact: {connection.lastContact}</p>
             <p>Shared List: {connection.list}</p>
+
 
           </div>
         </div>
