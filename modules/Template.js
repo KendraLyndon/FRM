@@ -38,8 +38,22 @@ var Aside = React.createClass({
       <div className="aside">
         <aside className="col-lg-2 col-md-2 col-xs-12">
           <img className="profilePic" src="../images/ryan.jpg"/>
-          <p><Link to="/:userName/eventful">Find Events</Link></p>
+          <Search />
+          <p><Link to="/"+{this.state.userId}+"/eventful">Find Events</Link></p>
+          <p><Link to="/:userName/lists/new">Add a List</Link></p>
+          <p><Link to="/:userName/connection/new">Add a Connection</Link></p>
         </aside>
+      </div>
+    )
+  }
+})
+
+var Search = React.createClass({
+  render(){
+    return (
+      <div>
+        <input type="text" placeholder="search for a connection"/>
+        <button>Go</button>
       </div>
     )
   }

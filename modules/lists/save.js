@@ -2,8 +2,6 @@ import React from 'react'
 import GetAllLists from '../ajax-helpers/lists/GetAllUserLists'
 import GetOneList from '../ajax-helpers/lists/GetOneList'
 
-GetOneList();
-
 export default React.createClass({
   render() {
     return (
