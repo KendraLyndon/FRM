@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 export default function () {
 
   var settings = {
-    url: "http://localhost:3000/api/list/100",
+    url: "https://obscure-basin-16378.herokuapp.com/api/list/501",
     method: 'get',
     dataType: 'json',
     cache: false,
@@ -16,6 +16,5 @@ export default function () {
       console.error(this.props.url, status, err.toString());
     }.bind(this)
   }
-
   return $.ajax(settings);
 }
