@@ -24,42 +24,39 @@ var Heading = React.createClass({
 });
 
 var UserForm = React.createClass({
-
-  constructor(props) {
-   super(props);
-   this.login_stuff = {};
-
- }
-
   login: function(e){
     e.preventDefault();
     $.ajax({
       url:"https://obscure-basin-16378.herokuapp.com/auth/login",
-      method:'post'
+      method:'post',
+      data:{
+        userName:"kendralyndon@gmail.com",
+        password:"password"
+      }
     })
       console.log('you have reached the login function');
       return('hi')
   },
   render: function(){
     return (
-      <form className="loginForm" onSubmit={this.login}>
+      <form className="loginForm">
         <input
           className="ryanInput"
           type='text'
-          ref="userName"
-          placeholder='User Name'
+          name="email"
+          placeholder='Email Address'
         />
         <input
           className="ryanInput"
           type='text'
-          ref="password"
+          name="password"
           placeholder='Password'
         />
         <button className="ryanButton ryanSignupButton">
           <Link to="/signup">Sign Up</Link>
         </button>
         <button className="ryanButton" type="submit">
-
+          <Link to="/1/dashboard">Log In</Link>
         </button>
       </form>
     )

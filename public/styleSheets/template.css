@@ -17,7 +17,30 @@ aside {
   float: right;
   overflow-y: scroll;
   height: 87vh;
-  background-color: purple;
+}
+
+.kendraList {
+  float: right;
+  overflow-y: scroll;
+  height: 87vh;
+  background-color: #FFFFE9;
+}
+
+.ShowConnection {
+  float: right;
+  overflow-y: scroll;
+  height: 87vh;
+  background-color: #FFFFE9;
+}
+
+.showContainer {
+  background-color: white;
+}
+
+.showPageleft {
+  margin-left: 20px;
+  width: 35%;
+  float: left;
 }
 
 .search-by-type{
@@ -50,7 +73,11 @@ aside {
   color: #FFFFE9 !important;
   padding-left: 5px;
   padding-right: 5px;
-  margin-left: 5px;
+  margin-left: 10px;
+}
+
+.kendraLink{
+  color: #333 !important;
 }
 
 .kendraSelect {

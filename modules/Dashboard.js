@@ -15,7 +15,8 @@ var data = [
     user_id:1,
     is_user:true,
     connection_id:2,
-    city:"Glens Falls"
+    city:"Glens Falls",
+    email:"lauriegarofalo@gmail.com"
   },
   {
     id:2,
@@ -23,13 +24,15 @@ var data = [
     last_name:"Garofalo",
     relationType:"family",
     relation:"dad",
-    contactFrequency:"1 per week",
-    lastContact:"9/10/2016",
+    contactFrequency:"1 per month",
+    lastContact:"8/29/2016",
     list:"to dos",
     user_id:1,
     is_user:true,
     connection_id:3,
-    city:"Glens Falls"
+    city:"Glens Falls",
+    email:"greggarofalo@gmail.com"
+
   },
   {
     id:3,
@@ -37,13 +40,15 @@ var data = [
     last_name:"Garofalo",
     relationType:"family",
     relation:"Grandfather",
-    contactFrequency:"1 per week",
-    lastContact:"9/10/2016",
+    contactFrequency:"2 per month",
+    lastContact:"8/14/2016",
     list:"to dos",
     user_id:1,
     is_user:true,
     connection_id:3,
-    city:"Glens Falls"
+    city:"Glens Falls",
+    email:"haroldgarofalo@gmail.com"
+
   },
   {
     id:2,
@@ -51,13 +56,15 @@ var data = [
     last_name:"Garofalo",
     relationType:"family",
     relation:"Sister",
-    contactFrequency:"1 per week",
-    lastContact:"9/10/2016",
+    contactFrequency:"1 per day",
+    lastContact:"9/12/2016",
     list:"to dos",
     user_id:1,
     is_user:true,
     connection_id:3,
-    city:"Glens Falls"
+    city:"Glens Falls",
+    email:"alexisgarofalo@gmail.com"
+
   },
   {
     id:2,
@@ -71,7 +78,9 @@ var data = [
     user_id:1,
     is_user:true,
     connection_id:3,
-    city:"Glens Falls"
+    city:"Glens Falls",
+    email:"chelseagarofalo@gmail.com"
+
   },
   {
     id:2,
@@ -85,7 +94,9 @@ var data = [
     user_id:1,
     is_user:true,
     connection_id:3,
-    city:"Glens Falls"
+    city:"Glens Falls",
+    email:"kendralyndon@gmail.com"
+
   },
   {
     id:3,
@@ -99,7 +110,9 @@ var data = [
     user_id:1,
     is_user:true,
     connection_id:4,
-    city:"Glens Falls"
+    city:"Glens Falls",
+    email:"maxsands@gmail.com"
+
   },
   {
     id:3,
@@ -113,7 +126,9 @@ var data = [
     user_id:1,
     is_user:true,
     connection_id:4,
-    city:"Glens Falls"
+    city:"Glens Falls",
+    email:"mattcolluci@gmail.com"
+
   },
   {
     id:3,
@@ -127,7 +142,9 @@ var data = [
     user_id:1,
     is_user:true,
     connection_id:4,
-    city:"Glens Falls"
+    city:"Glens Falls",
+    email:"gordon@gmail.com"
+
   },
   {
     id:3,
@@ -141,7 +158,9 @@ var data = [
     user_id:1,
     is_user:true,
     connection_id:4,
-    city:"Glens Falls"
+    city:"Glens Falls",
+    email:"jordon@gmail.com"
+
   },
 ]
 
@@ -178,9 +197,7 @@ var Connections = React.createClass({
             <p>Relation: {connection.relation}</p>
             <p>Contact Frequency: {connection.contactFrequency}</p>
             <p>Last Contact: {connection.lastContact}</p>
-            <p>Shared List: {connection.list}</p>
-
-
+            <p><Link className="kendraLink" to="/100/lists/100">Shared List: {connection.list}</Link></p>
           </div>
         </div>
       );

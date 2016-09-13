@@ -22,7 +22,7 @@ var Header = React.createClass({
         <header>
           <h1 className="title">FRM</h1>
           <ul className="nav">
-            <li className="navlink"><Link to="/:userName/dashboard">Dashboard</Link></li>
+            <li className="navlink"><Link to="/100/dashboard">Dashboard</Link></li>
             <li className="navlink"><Link to="/">Edit Profile</Link></li>
             <li className="navlink"><Link to="/">Log Out</Link></li>
           </ul>

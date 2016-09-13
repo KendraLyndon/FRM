@@ -16,18 +16,15 @@ var Testing = React.createClass({
   },
   componentDidMount: function() {
     var settings = {
-      url: "https://obscure-basin-16378.herokuapp.com/api/connections/1001",
+      url: "https://obscure-basin-16378.herokuapp.com/api/list/501",
       method: 'get',
       dataType: 'json',
       cache: false,
       success: function(data) {
         console.log(data);
         this.setState({
-          firstName: data.connection.first_name,
-          lastName: data.connection.last_name,
-          email:data.connection.email,
-          phone:data.connection.phone
-
+          listTitle: data.list.name,
+          item:data.listItems[0].item_name
         });
 
       }.bind(this),
@@ -39,12 +36,15 @@ var Testing = React.createClass({
   },
   render: function() {
     return (
-      <div className="test">
-        <h1>Testing</h1>
-        <p>{this.state.firstName}</p>
-        <p>{this.state.lastName}</p>
-        <p>{this.state.email}</p>
-        <p>{this.state.phone}</p>
+      <div className="kendraList col-lg-10 col-md-10 col-xs-12">
+        <div className="connection panel panel-custom">
+          <div className="panel-heading">
+            <h3 className="panel-title">{this.state.listTitle}</h3>
+          </div>
+          <div className="panel-body">
+            <p>{this.state.item}</p>
+          </div>
+        </div>
       </div>
     );
   }
