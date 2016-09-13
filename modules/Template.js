@@ -64,7 +64,7 @@ var ConnectionTypes = React.createClass({
   render(){
     return (
       <div className="search-by-type">
-        <p>Search by Category:</p>
+        <p className="kendraSelectTitle">Search:</p>
         <select className="kendraSelect">
           <option>Friends</option>
           <option>Family</option>

@@ -6,6 +6,9 @@
  font-family:'CaviarDreams';
  src:  url('../fonts/Caviar-Dreams/CaviarDreams.ttf') format('truetype');
 }
+* {
+  font-family:"quicksand";
+}
 h3.panel-title{
   color: #FFFFE9 !important
 }
@@ -182,6 +185,7 @@ a{
   float: right;
   overflow-y: scroll;
   border: .5px solid grey;
+  border-radius: 2px;
   display: inline-block;
   margin-top: 2vh;
   margin-right: 25px;
@@ -196,6 +200,7 @@ table{
 th{
   width: 33%;
   padding-left: 3%;
+  height: 2em;
   background-color: #4F42C1;
   color: #FFFFE9;
 }
