@@ -44,12 +44,13 @@ aside {
 }
 
 .search-by-type{
-  margin-bottom:30px;
+  margin-top: 35px;
+  margin-bottom: 30px;
   color: #FFFFE9;
   margin-top: 15px;
   display:flex;
   flex-direction:row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-start;
 }
 
@@ -94,6 +95,7 @@ aside {
   color: #333;
   font-weight: lighter;
   font-family: 'quicksand';
+  border: none;
 }
 
 footer{

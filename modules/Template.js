@@ -37,7 +37,9 @@ var Aside = React.createClass({
     return (
       <div className="aside">
         <aside className="col-lg-2 col-md-2 col-xs-12">
-          <img className="profilePic" src="../images/ryan.jpg"/>
+          <div className="profile_pic_container">
+            <img className="profilePic" src="../images/ryan.jpg"/>
+          </div>
           <Search />
           <ConnectionTypes />
           <p><Link to="/100/eventful">Find Events</Link></p>

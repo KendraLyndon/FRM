@@ -30,17 +30,23 @@ header{
     color: #BAD80A;
     float:left;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 2vh;
 }
 .dashboard{
   background-color: #FFFFE9;
+}
+.profile_pic_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 aside{
   background-color:#003D6B;
   border-top-style: inset;
   border-right-style: inset;
   border-bottom-style: inset;
-
 }
 footer{
   background-color: #003D6B;
@@ -68,10 +74,9 @@ a{
 }
 .profilePic{
   margin-top: 20px;
-  margin-left: 15px;
   margin-bottom: 20px;
-  height: 100px;
-  width: 100px;
+  height: 125px;
+  width: 125px;
   border-radius: 50%;
   border: solid 1px #555;
   background-color: #eed;
@@ -180,18 +185,16 @@ a{
 }
 .connectionHistory{
   display: inline-flex;
-  height: 60vh;
   width: 40vw;
   float: right;
   overflow-y: scroll;
-  border: .5px solid grey;
-  border-radius: 2px;
   display: inline-block;
   margin-top: 2vh;
   margin-right: 25px;
-  background-color: #d3d3d3;
 }
 table{
+  border: .5px solid grey;
+  border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
@@ -204,9 +207,14 @@ th{
   background-color: #4F42C1;
   color: #FFFFE9;
 }
+tr:nth-child(even){
+  background-color:#FFFFE9;
+}
 td{
   padding-left: 3%;
 }
 tr{
+  margin-top: 5px;
+  margin-bottom: 5px;
   border-bottom:1px #333 !important;
 }
